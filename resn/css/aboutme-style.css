@@ -1,0 +1,85 @@
+/*
+ * Jawad Kadri
+ * All links for text/image formatting
+ * Jan 29, 2022
+*/
+body { background-color: #222; color: white; }
+.biggerDot { font-size: 40px; color: orange; }
+.biggerText { font-size: 30px; }
+.center { text-align: center; }
+.right { text-align: right; }   
+
+/* Image */
+.jawadPic {
+    float: right;
+    padding-right: 3%;
+}
+
+/* Set colour to orange */
+.orangetext { color: orange }
+
+/* Set colour to underline texted to orange */
+.orangeunderline {
+    text-decoration: underline;
+    text-decoration-color: orange;
+}
+
+/* Animate out (pop down) */
+.highlight { transition: ease-out .3s; }
+
+/* Animate in (pop up) */
+.highlight:hover {
+    margin-bottom: 15px;
+    transition: ease-in .5s;
+}
+
+/* Set colour back to default */
+.texteffect { transition: ease-out.5s; }
+
+/* Set colour to white */
+.texteffect:hover {
+    color: white;
+    transition: ease-in .3s;
+}
+
+.imagbordereffect { 
+    transition: ease-out .3s; 
+}
+
+/* Image border zooming in */
+.imagbordereffect:hover {
+    border: 8px solid orange;
+    transition: ease-in .3s;
+}
+
+/* Designed to allow images to sit in the same row */
+* { box-sizing: border-box; }
+.row { display: flex; text-align: center; }
+
+/* Create three equal columns that sits next to each other */
+.column {
+    flex: 33.33%;
+    padding: 5px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1536px) {
+    .jawadPic {
+        float: none;
+        text-align: center;
+    }
+    .icons {
+        text-align: center;
+    }
+    /* Designed to allow images to sit in the same row */
+    .row { 
+        display:inline-block;
+        padding-left: 30%;
+    }
+    /* Create three equal columns that sits next to each other */
+    .column {
+        padding: 5px;
+        width: 80%;
+    }
+
+}
